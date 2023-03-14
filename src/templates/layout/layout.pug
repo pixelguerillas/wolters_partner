@@ -1,0 +1,27 @@
+block locals
+  - var mainNavi, headerVariante  
+
+doctype html
+html
+  <head>
+    <title>Montessori Bamberg</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <base href="/">
+    <meta name="theme-color" content="#123372">
+    <meta name="msapplication-navbutton-color" content="#123372">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#123372">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+  </head>
+  body(class=(headerVariante === "promo") ? "promo__header" : null )
+
+    //#site
+    block header
+        include ../header/header-nav
+    main(style={'min-height': '120vh'})
+        block content
+    block footer
+      include ../footer/footer
+
+    | <script src="./js/function.js"></script> 
+    | <script src="./js/lazy_loading_lib.bundle.js"></script>

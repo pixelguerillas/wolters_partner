@@ -1,0 +1,15 @@
+.article__media {
+    margin-bottom: $space-xlarge;
+    figcaption{
+        @include fb(true);
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        @include fs("small");
+        font-family: $font-primary-semi;
+        color: $c-gray-7;
+    }   
+    img {
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,254 @@
+extends ./layout/layout
+
+block locals
+  - var areaNavi = "home"
+
+block content
+
+  section.modul.modul--topModul.modul--topModulFullImg
+    article 
+      .modul__picture--full
+        picture
+          source(data-srcset="/library/topmodul_1440x700.jpg" media="(min-width: 900px)" loading="lazy" class="lazyload")
+          source(data-srcset="/library/topmodul_700x800.jpg" media="(min-width: 481px)" loading="lazy" class="lazyload")
+          source(data-srcset="/library/topmodul_460x800.jpg" media="(max-width: 480px)" loading="lazy" class="lazyload")
+          img(data-src="/library/topmodul_1440x700.jpg" loading="lazy" class="lazyload")
+      .modul__news.contain.contain--large
+        .modul__news__border
+          header 
+            h1 Das Kind im Mittelpunkt
+          .modul__teaser
+            p Unsere Arbeit ist davon geprägt, jedes einzelne Kind in den Mittelpunkt zu stellen. Wir sind davon überzeugt, dass jedes Kind Erfahrungen für sich selbst erleben muss, um nachhaltig zu lernen. Dafür stehen unsere Leitsätze und die Philosophie in Kinderhaus und Schule.
+          .modul__expand 
+            .monte-btn__row
+              .monte-btn Link zum Formular
+              .monte-btn.monte-btn--outline outline Btn
+
+
+  //section.modul.modul--topModul.modul--topModulHalfImg
+    article 
+      .modul__picture
+        picture
+          source(data-srcset="/library/topmodul_1440x700.jpg" media="(min-width: 900px)" loading="lazy" class="lazyload")
+          source(data-srcset="/library/topmodul_700x800.jpg" media="(min-width: 481px)" loading="lazy" class="lazyload")
+          source(data-srcset="/library/topmodul_460x800.jpg" media="(max-width: 480px)" loading="lazy" class="lazyload")
+          img(data-src="/library/topmodul_1440x700.jpg" loading="lazy" class="lazyload")
+      .modul__news
+        header 
+          h1 Das Kind im Mittelpunkt
+        .modul__teaser
+          p Unsere Arbeit ist davon geprägt, jedes einzelne Kind in den Mittelpunkt zu stellen. Wir sind davon überzeugt, dass jedes Kind Erfahrungen für sich selbst erleben muss, um nachhaltig zu lernen. Dafür stehen unsere Leitsätze und die Philosophie in Kinderhaus und Schule.
+        .modul__expand 
+          .monte-btn__row
+            .monte-btn Link zum Formular
+      
+
+  section.modul.modul_triple 
+    .contain.contain--large 
+      h3 Für wen soll´s sein?
+      .modul_triple__container
+        article.modul_triple__article.modul_triple__article--kinderhaus  
+          a(href="/kinderhaus/")
+            .modul__picture
+              picture
+                source(data-srcset="/library/modul_400x400_kids.jpg" media="(min-width: 900px)" loading="lazy" class="lazyload")
+                source(data-srcset="/library/modul_400x400_kids.jpg" media="(min-width: 769px)" loading="lazy" class="lazyload")
+                source(data-srcset="/library/modul_400x400_kids.jpg" media="(max-width: 768px)" loading="lazy" class="lazyload")
+                img(data-src="/library/modul_1200x800.jpg" loading="lazy" class="lazyload")
+            .modul__news
+              header 
+                h5 Montessori Kinderhaus
+              .modul__teaser
+                p Unsere Arbeit ist davon geprägt, jedes einzelne Kind in den Mittelpunkt zu stellen. Unsere Arbeit ist davon geprägt, jedes einzelne Kind in den Mittelpunkt zu stellen.
+
+        article.modul_triple__article.modul_triple__article--grundstufe
+          a(href="/grundstufe/")
+            .modul__picture
+              picture
+                source(data-srcset="/library/modul_400x400.jpg" media="(min-width: 900px)" loading="lazy" class="lazyload")
+                source(data-srcset="/library/modul_400x400.jpg" media="(min-width: 769px)" loading="lazy" class="lazyload")
+                source(data-srcset="/library/modul_400x400.jpg" media="(max-width: 768px)" loading="lazy" class="lazyload")
+                img(data-src="/library/modul_1200x800.jpg" loading="lazy" class="lazyload")
+            .modul__news
+              header 
+                h5 Montessori Grundstufe
+              .modul__teaser
+                p Unsere Arbeit ist davon geprägt, jedes einzelne Kind in den Mittelpunkt zu stellen.
+        
+        article.modul_triple__article.modul_triple__article--sekundarstufe
+          a(href="/sekundarstufe/")
+            .modul__picture
+                picture
+                  source(data-srcset="/library/modul_400x400_sek.jpg" media="(min-width: 900px)" loading="lazy" class="lazyload")
+                  source(data-srcset="/library/modul_400x400_sek.jpg" media="(min-width: 769px)" loading="lazy" class="lazyload")
+                  source(data-srcset="/library/modul_400x400_sek.jpg" media="(max-width: 768px)" loading="lazy" class="lazyload")
+                  img(data-src="/library/modul_1200x800.jpg" loading="lazy" class="lazyload")
+            .modul__news
+              header 
+                h5 Montessori Sekundarstufe
+              .modul__teaser
+                p Unsere Arbeit ist davon geprägt, jedes einzelne Kind in den Mittelpunkt zu stellen.
+
+  section.modul.modul--fullImg.modul--fullImgColor
+    //.modul__picture
+      picture
+        source(data-srcset="/library/grund-pano-xl.jpg" media="(min-width: 900px)" loading="lazy" class="lazyload")
+        source(data-srcset="/library/grund-pano-l.jpg" media="(min-width: 769px)" loading="lazy" class="lazyload")
+        source(data-srcset="/library/grund-pano-s.jpg" media="(max-width: 768px)" loading="lazy" class="lazyload")
+        img(data-src="/library/grund-pano-xl.jpg" loading="lazy" class="lazyload")
+    article.contain.contain--medium
+      .modul--fullImg__news
+        header 
+          h3 Montessori Kinderhaus
+        .modul__teaser
+          p Auf zwei Stockwerken gibt es hier mehrere großzügige Räume für Aktivität, Kreativität, Spiel, Arbeit und Ruhe. Im Außenbereich laden Klettergelegenheiten, Sandkasten und auch Rückzugsbereiche zum Bewegen und „Sich-Ausprobieren“ ein.
+          p Auf zwei Stockwerken gibt es hier mehrere großzügige Räume für Aktivität, Kreativität, Spiel, Arbeit und Ruhe. Im Außenbereich laden Klettergelegenheiten
+        .modul__expand  
+          .monte-btn__row
+            a(href="/grundstufe/").monte-btn Informationen
+
+
+  section.modul.modul--half.modul--kinderhaus
+    article.contain.contain--large 
+      .modul__picture
+        a(href="/kinderhaus/")
+          picture
+            source(data-srcset="/library/modul_400x500_kids.jpg" media="(min-width: 900px)" loading="lazy" class="lazyload")
+            source(data-srcset="/library/modul_400x500_kids.jpg" media="(min-width: 769px)" loading="lazy" class="lazyload")
+            source(data-srcset="/library/modul_400x400_kids.jpg" media="(max-width: 768px)" loading="lazy" class="lazyload")
+            img(data-src="/library/modul_1200x800.jpg" loading="lazy" class="lazyload")
+      .modul__news
+        a(href="/kinderhaus/")
+          header 
+            h3 Montessori Kinderhaus
+          .modul__teaser
+            p In der Kindergartengruppe spielen und lernen 25 Kinder in einer altersgemischten Gruppe miteinander – ab dem Alter von drei Jahren bis zur Einschulung. Das Kinderhauses ist derzeit im ehemaligen Feuerwehrheim der Stadt Hallstadt untergebracht. Auf zwei Stockwerken gibt es hier mehrere großzügige Räume für Aktivität, Kreativität, Spiel, Arbeit und Ruhe. Im Außenbereich laden Klettergelegenheiten, Sandkasten und auch Rückzugsbereiche zum Bewegen und „Sich-Ausprobieren“ ein.
+          .modul__expand 
+            .monte-btn__row
+              .monte-btn.monte-btn--kinderhaus Anmeldung und Kosten
+
+
+  section.modul.modul--half.modul--sekundarstufe
+    article.contain.contain--large 
+      .modul__picture
+        a(href="/sekundarstufe/")
+          picture
+            source(data-srcset="/library/modul_400x500_sek.jpg" media="(min-width: 900px)" loading="lazy" class="lazyload")
+            source(data-srcset="/library/modul_400x500_sek.jpg" media="(min-width: 769px)" loading="lazy" class="lazyload")
+            source(data-srcset="/library/modul_400x400_sek.jpg" media="(max-width: 768px)" loading="lazy" class="lazyload")
+            img(data-src="/library/modul_1200x800.jpg" loading="lazy" class="lazyload")
+      .modul__news
+        a(href="/sekundarstufe/")
+          header 
+            h3 Montessori Sekundarstufe
+          .modul__teaser
+            p In der Kindergartengruppe spielen und lernen 25 Kinder in einer altersgemischten Gruppe miteinander – ab dem Alter von drei Jahren bis zur Einschulung. Das Kinderhauses ist derzeit im ehemaligen Feuerwehrheim der Stadt Hallstadt untergebracht. Auf zwei Stockwerken gibt es hier mehrere großzügige Räume für Aktivität, Kreativität, Spiel, Arbeit und Ruhe. Im Außenbereich laden Klettergelegenheiten, Sandkasten und auch Rückzugsbereiche zum Bewegen und „Sich-Ausprobieren“ ein.
+          .modul__expand  
+            .monte-btn__row
+              .monte-btn.monte-btn--sekundar.monte-btn--outline Informationen 
+
+
+  section.modul.modul--grundstufe.modul--fullImg
+    .modul__picture
+      picture
+        source(data-srcset="/library/grund-pano-xl.jpg" media="(min-width: 900px)" loading="lazy" class="lazyload")
+        source(data-srcset="/library/grund-pano-l.jpg" media="(min-width: 769px)" loading="lazy" class="lazyload")
+        source(data-srcset="/library/grund-pano-s.jpg" media="(max-width: 768px)" loading="lazy" class="lazyload")
+        img(data-src="/library/grund-pano-xl.jpg" loading="lazy" class="lazyload")
+    article.contain.contain--medium
+      .modul--fullImg__news
+        header 
+          h3 Montessori Grundstufe
+        .modul__teaser
+          p Auf zwei Stockwerken gibt es hier mehrere großzügige Räume für Aktivität, Kreativität, Spiel, Arbeit und Ruhe. Im Außenbereich laden Klettergelegenheiten, Sandkasten und auch Rückzugsbereiche zum Bewegen und „Sich-Ausprobieren“ ein.
+        .modul__expand  
+          .monte-btn__row
+            a(href="/grundstufe/").monte-btn.monte-btn--grundstufe Informationen 
+
+
+  section.modul.modul--teaserImg
+    .contain.contain--large
+      article
+        .modul--teaserImg__news
+          header 
+            h3 Montessori Grundstufe
+          .modul__teaser
+            p Auf zwei Stockwerken gibt es hier mehrere großzügige Räume für Aktivität, Kreativität, Spiel, Arbeit und Ruhe. Im Außenbereich laden Klettergelegenheiten, Sandkasten und auch Rückzugsbereiche zum Bewegen und „Sich-Ausprobieren“ ein.
+            p Im Außenbereich laden Klettergelegenheiten, Sandkasten und auch Rückzugsbereiche zum Bewegen und „Sich-Ausprobieren“ ein.
+          .modul__expand  
+            .monte-btn__row
+              .monte-btn.monte-btn--grundstufe Informationen 
+      .modul__picture
+        a(href="/grundstufe/")
+          picture
+            source(data-srcset="/library/modul_400x400_kids.jpg" media="(min-width: 900px)" loading="lazy" class="lazyload")
+            source(data-srcset="/library/modul_400x400_kids.jpg" media="(min-width: 481px)" loading="lazy" class="lazyload")
+            source(data-srcset="/library/modul_400x400_kids.jpg" media="(max-width: 480px)" loading="lazy" class="lazyload")
+            img(data-src="/library/modul_400x400_kids.jpg" loading="lazy" class="lazyload")
+        a(href="/grundstufe/")
+          picture
+            source(data-srcset="/library/modul_400x400.jpg" media="(min-width: 900px)" loading="lazy" class="lazyload")
+            source(data-srcset="/library/modul_400x400.jpg" media="(min-width: 481px)" loading="lazy" class="lazyload")
+            source(data-srcset="/library/modul_400x400.jpg" media="(max-width: 480px)" loading="lazy" class="lazyload")
+            img(data-src="/library/modul_400x400.jpg" loading="lazy" class="lazyload")
+        a(href="/grundstufe/")
+          picture
+            source(data-srcset="/library/modul_400x400_sek.jpg" media="(min-width: 900px)" loading="lazy" class="lazyload")
+            source(data-srcset="/library/modul_400x400_sek.jpg" media="(min-width: 481px)" loading="lazy" class="lazyload")
+            source(data-srcset="/library/modul_400x400_sek.jpg" media="(max-width: 480px)" loading="lazy" class="lazyload")
+            img(data-src="/library/modul_400x400_sek.jpg" loading="lazy" class="lazyload")
+        a(href="/grundstufe/")
+          picture
+            source(data-srcset="/library/modul_400x400_kids.jpg" media="(min-width: 900px)" loading="lazy" class="lazyload")
+            source(data-srcset="/library/modul_400x400_kids.jpg" media="(min-width: 481px)" loading="lazy" class="lazyload")
+            source(data-srcset="/library/modul_400x400_kids.jpg" media="(max-width: 480px)" loading="lazy" class="lazyload")
+            img(data-src="/library/modul_400x400_kids.jpg" loading="lazy" class="lazyload")
+ 
+
+
+  section.modul.modul--imgColored
+    article.contain.contain--large 
+      .modul__picture
+        picture
+          source(data-srcset="/library/modul_1200x800.jpg" media="(min-width: 900px)" loading="lazy" class="lazyload")
+          source(data-srcset="/library/topmodul_700x800.jpg" media="(min-width: 481px)" loading="lazy" class="lazyload")
+          source(data-srcset="/library/topmodul_460x800.jpg" media="(max-width: 480px)" loading="lazy" class="lazyload")
+          img(data-src="/library/modul_1200x800.jpg" loading="lazy" class="lazyload")
+      .modul__news
+        header 
+          h2 Das Kind im Mittelpunkt
+        .modul__teaser
+          p Unsere Arbeit ist davon geprägt, jedes einzelne Kind in den Mittelpunkt zu stellen. Wir sind davon überzeugt, dass jedes Kind Erfahrungen für sich selbst erleben muss, um nachhaltig zu lernen. Dafür stehen unsere Leitsätze und die Philosophie in Kinderhaus und Schule.
+        .modul__expand 
+          .monte-btn__row
+            .monte-btn alle Infos zur Grundstufe
+
+
+  section.modul.modul--imgColored
+    article.contain.contain--large 
+      .modul__picture
+        picture
+          source(data-srcset="/library/modul_1200x800.jpg" media="(min-width: 900px)" loading="lazy" class="lazyload")
+          source(data-srcset="/library/topmodul_700x800.jpg" media="(min-width: 481px)" loading="lazy" class="lazyload")
+          source(data-srcset="/library/topmodul_460x800.jpg" media="(max-width: 480px)" loading="lazy" class="lazyload")
+          img(data-src="/library/modul_1200x800.jpg" loading="lazy" class="lazyload")
+      .modul__news
+        header 
+          h2 Das Kind im Mittelpunkt
+        .modul__teaser
+          p Unsere Arbeit ist davon geprägt, jedes einzelne Kind in den Mittelpunkt zu stellen. Wir sind davon überzeugt, dass jedes Kind Erfahrungen für sich selbst erleben muss, um nachhaltig zu lernen. Dafür stehen unsere Leitsätze und die Philosophie in Kinderhaus und Schule.
+          p dsjfh sdf 
+          p skdjhf sdkjl h 
+          p sdjghsdjghsdg 
+          h2 dsjghfsdjgfhd
+          p dsjfh sdf 
+          p skdjhf sdkjl h 
+          p sdjghsdjghsdg 
+          h2 dsjghfsdjgfhd
+          p dsjfh sdf 
+          p skdjhf sdkjl h 
+          p sdjghsdjghsdg 
+          h2 dsjghfsdjgfhd
+        .modul__expand 
+          .monte-btn__row
+            .monte-btn alle Infos zur Grundstufe

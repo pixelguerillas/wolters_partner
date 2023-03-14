@@ -1,0 +1,45 @@
+$font-primary: "Palanquin", arial, helvetica, tahoma, sans-serif;
+$font-primary-bold: "Palanquin Bold", arial, helvetica, tahoma, sans-serif;
+$font-primary-semi: "Palanquin Semi", arial, helvetica, tahoma, sans-serif;
+$font-primary-light: "Palanquin Light", arial, helvetica, tahoma, sans-serif;
+
+$font-second:  'Donegal One', Arial, sans-serif;
+
+$font-icons: "Wolters-IC", sans-serif;
+
+@font-face {
+    font-family: 'Palanquin';
+    src: url('../fonts/Palanquin-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Palanquin Light';
+    src: url('../fonts/Palanquin-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Palanquin Semi';
+    src: url('../fonts/Palanquin-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Palanquin Bold';
+    src: url('../fonts/Palanquin-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Donegal One';
+    src: url('../fonts/DonegalOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

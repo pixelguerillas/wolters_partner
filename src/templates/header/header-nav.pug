@@ -1,0 +1,310 @@
+
+header.site__header
+    .navigation    
+        nav
+            a(href="/").logo
+                picture 
+                    source(srcset="/library/logo.gif"  media="(min-width: 601px)")
+                    source(srcset="/library/logo.gif"  media="(max-width: 600px)")
+                    img(src="/library/logo.gif" alt="" title="Wolters & Partner - Steuerberatungsgesellschaft")
+
+            .navigation__list
+                ul
+                    li(class=(areaNavi === "kinderhaus") ? "navbar__main--active" : null)
+                        a(
+                            href="./kanzlei/"
+                        ) 
+                           | Kanzlei  
+                    li(class=(areaNavi === "grundstufe") ? "navbar__main--active" : null )
+                        a(
+                            href="./"
+                        ) 
+                            span Leistungsübersicht
+                    li(class=(areaNavi === "sekundarstufe") ? "navbar__main--active" : null )
+                        a(
+                            href="./"
+                            class=(areaNavi === "home2") ? "navbar__main--active" : null 
+                        ) 
+                            span Servicebereich
+                .burger
+                    .burger__patty
+                    .burger__patty
+                    .burger__patty
+
+    if areaNavi === "kinderhaus"
+        .navigation__sub.navigation__sub--kiga
+            ul 
+                li 
+                    a(
+                        href="./kinderhaus/"
+                    ) 
+                        span Grundsätze
+                li 
+                    a(
+                        href="./kinderhaus/"
+                    ) 
+                        span Räumlichkeiten 
+                li 
+                    a(
+                        href="./kinderhaus/"
+                    ) 
+                        span Anmeldung 
+                li 
+                    a(
+                        href="./kinderhaus/"
+                    ) 
+                        span Team des Kinderhauses
+    
+    if areaNavi === "grundstufe"
+        .navigation__sub.navigation__sub--grund
+            ul 
+                li 
+                    a(
+                        href="./grundstufe/"
+                    ) 
+                        span Konzept
+                li 
+                    a(
+                        href="./grundstufe/"
+                    ) 
+                        span Tagesablauf 
+                li 
+                    a(
+                        href="./grundstufe/"
+                    ) 
+                        span Hausaufgaben & Noten 
+                li 
+                    a(
+                        href="./grundstufe/"
+                    ) 
+                        span Musikschwerpunkt 
+                li 
+                    a(
+                        href="./grundstufe/"
+                    ) 
+                        span Schulübertritt 
+                li 
+                    a(
+                        href="./grundstufe/"
+                    ) 
+                        span Anmeldung & Kosten
+
+    if areaNavi === "sekundarstufe"
+        .navigation__sub.navigation__sub--sekundar
+            ul 
+                li 
+                    a(
+                        href="./sekundarstufe/"
+                    ) 
+                        span Grundgedanke
+                li 
+                    a(
+                        href="./sekundarstufe/"
+                    ) 
+                        span Freiarbeit 
+                li 
+                    a(
+                        href="./sekundarstufe/"
+                    ) 
+                        span Berufspraktika 
+                li 
+                    a(
+                        href="./sekundarstufe/"
+                    ) 
+                        span Abschlüsse 
+                li 
+                    a(
+                        href="./sekundarstufe/"
+                    ) 
+                        span Anmeldung & Kosten 
+
+    .menu
+        .menu__brand
+            a(href="/")
+                img(src="/library/Montessori_BA_Logo_Verein_190px.png").logo__menu
+        .menu__list
+            ul
+                li.menu__item
+                    a.menu__link(
+                        href="./kinderhaus/"
+                        class=(areaNavi === "kinderhaus" || areaNavi === undefined) ? "navbar__main--active" : null
+                    ) 
+                        span Kinderhaus 
+                    ul 
+                        li 
+                            a.menu__link__sec(
+                                href="./kinderhaus/"
+                                class=(areaNavi === "kinderhaus" || areaNavi === undefined) ? "navbar__main--active" : null
+                            ) 
+                                span Grundsätze
+                        li 
+                            a.menu__link__sec(
+                                href="./kinderhaus/"
+                                class=(areaNavi === "kinderhaus" || areaNavi === undefined) ? "navbar__main--active" : null
+                            ) 
+                                span Räumlichkeiten 
+                        li 
+                            a.menu__link__sec(
+                                href="./kinderhaus/"
+                                class=(areaNavi === "kinderhaus" || areaNavi === undefined) ? "navbar__main--active" : null
+                            ) 
+                                span Anmeldung 
+                        li 
+                            a.menu__link__sec(
+                                href="./kinderhaus/"
+                                class=(areaNavi === "kinderhaus" || areaNavi === undefined) ? "navbar__main--active" : null
+                            ) 
+                                span Team des Kinderhauses
+
+                li.menu__item
+                    a.menu__link(
+                        href="./grundstufe/"
+                        class=(areaNavi === "grundstufe") ? "navbar__main--active" : null 
+                    ) 
+                        span Grundstufe
+                    ul 
+                        li 
+                            a.menu__link__sec(
+                                href="./grundstufe/"
+                                class=(areaNavi === "grundstufe" || areaNavi === undefined) ? "navbar__main--active" : null
+                            ) 
+                                span Konzept
+                        li 
+                            a.menu__link__sec(
+                                href="./grundstufe/"
+                                class=(areaNavi === "grundstufe" || areaNavi === undefined) ? "navbar__main--active" : null
+                            ) 
+                                span Tagesablauf 
+                        li 
+                            a.menu__link__sec(
+                                href="./grundstufe/"
+                                class=(areaNavi === "grundstufe" || areaNavi === undefined) ? "navbar__main--active" : null
+                            ) 
+                                span Hausaufgaben & Noten 
+                        li 
+                            a.menu__link__sec(
+                                href="./grundstufe/"
+                                class=(areaNavi === "grundstufe" || areaNavi === undefined) ? "navbar__main--active" : null
+                            ) 
+                                span Musikschwerpunkt 
+                        li 
+                            a.menu__link__sec(
+                                href="./grundstufe/"
+                                class=(areaNavi === "grundstufe" || areaNavi === undefined) ? "navbar__main--active" : null
+                            ) 
+                                span Schulübertritt 
+                        li 
+                            a.menu__link__sec(
+                                href="./grundstufe/"
+                                class=(areaNavi === "grundstufe" || areaNavi === undefined) ? "navbar__main--active" : null
+                            ) 
+                                span Anmeldung & Kosten
+
+                li.menu__item
+                    a.menu__link(
+                        href="./sekundarstufe/"
+                        class=(areaNavi === "sekundarstufe") ? "navbar__main--active" : null 
+                    ) 
+                        span Sekundarstufe
+                    ul
+                        li 
+                            a.menu__link__sec(
+                                href="./sekundarstufe/"
+                                class=(areaNavi === "sekundarstufe" || areaNavi === undefined) ? "navbar__main--active" : null
+                            ) 
+                                span Grundgedanke 
+                        li 
+                            a.menu__link__sec(
+                                href="./sekundarstufe/"
+                                class=(areaNavi === "sekundarstufe" || areaNavi === undefined) ? "navbar__main--active" : null
+                            ) 
+                                span Freiarbeit 
+                        li 
+                            a.menu__link__sec(
+                                href="./sekundarstufe/"
+                                class=(areaNavi === "sekundarstufe" || areaNavi === undefined) ? "navbar__main--active" : null
+                            ) 
+                                span Berufspraktika 
+                        li 
+                            a.menu__link__sec(
+                                href="./sekundarstufe/"
+                                class=(areaNavi === "sekundarstufe" || areaNavi === undefined) ? "navbar__main--active" : null
+                            ) 
+                                span Abschlüsse 
+                        li 
+                            a.menu__link__sec(
+                                href="./sekundarstufe/"
+                                class=(areaNavi === "sekundarstufe" || areaNavi === undefined) ? "navbar__main--active" : null
+                            ) 
+                                span Anmeldung & Kosten 
+
+                li.menu__item
+                    a.menu__link(
+                        href=""
+                        class=(areaNavi === "verein") ? "navbar__main--active" : null 
+                    ) 
+                        span  Über uns
+                    ul 
+                        li 
+                            a.menu__link__sec(
+                                href="./sekundarstufe/"
+                                class=(areaNavi === "sekundarstufe" || areaNavi === undefined) ? "navbar__main--active" : null
+                            ) 
+                                span Schulleitung
+                        li 
+                            a.menu__link__sec(
+                                href="./sekundarstufe/"
+                                class=(areaNavi === "sekundarstufe" || areaNavi === undefined) ? "navbar__main--active" : null
+                            ) 
+                                span Sekretariat 
+                        li 
+                            a.menu__link__sec(
+                                href="./sekundarstufe/"
+                                class=(areaNavi === "sekundarstufe" || areaNavi === undefined) ? "navbar__main--active" : null
+                            ) 
+                                span Lehrerkollegium 
+                        li 
+                            a.menu__link__sec(
+                                href="./sekundarstufe/"
+                                class=(areaNavi === "sekundarstufe" || areaNavi === undefined) ? "navbar__main--active" : null
+                            ) 
+                                span Elternbeirat 
+                        li 
+                            a.menu__link__sec(
+                                href="./sekundarstufe/"
+                                class=(areaNavi === "sekundarstufe" || areaNavi === undefined) ? "navbar__main--active" : null
+                            ) 
+                                span Schulbeirat 
+                        li 
+                            a.menu__link__sec(
+                                href="./sekundarstufe/"
+                                class=(areaNavi === "sekundarstufe" || areaNavi === undefined) ? "navbar__main--active" : null
+                            ) 
+                                span Spenden 
+                        li 
+                            a.menu__link__sec(
+                                href="./sekundarstufe/"
+                                class=(areaNavi === "sekundarstufe" || areaNavi === undefined) ? "navbar__main--active" : null
+                            ) 
+                                span Trägerverein
+
+                li.menu__item
+                    a.menu__link(
+                        href=""
+                        class=(areaNavi === "elements") ? "navbar__main--active" : null 
+                    ) 
+                        span Kontakt
+
+                li.menu__item
+                    a.menu__link(
+                        href=""
+                        class=(areaNavi === "elements") ? "navbar__main--active" : null 
+                    ) 
+                        span Impressum 
+
+                li.menu__item
+                    a.menu__link(
+                        href=""
+                        class=(areaNavi === "elements") ? "navbar__main--active" : null 
+                    ) 
+                        span Datenschutz

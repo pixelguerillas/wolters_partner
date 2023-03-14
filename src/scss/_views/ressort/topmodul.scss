@@ -1,0 +1,100 @@
+.modul--topModulFullImg{
+    padding: 0;
+    overflow: hidden;
+    
+    article{
+        position: relative;
+        padding: 0 0 $space-xlarge 0;
+        min-height: 450px;
+        &:before{
+            padding-top: 50%;
+            width: 100%;
+            content: "";
+            display: inline-block;
+            @include media(">m") {
+                padding-top: 30%; 
+            }
+            @include media(">l") {
+                padding-top: 300px; 
+            }
+        }
+    }
+
+    .modul__picture--full{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: $c-black;
+
+        picture{
+            height: 100%;
+            opacity: .75;
+            @include fb(true);
+            justify-content: center;
+
+            img{
+                min-height: 100%;
+                min-width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .modul__news{
+        &__border{
+            position: relative;
+            color: $c-white;
+            margin: 0 $space-large;
+            padding: $space-large;
+            @include media(">m") {
+                max-width: 30em; 
+            }
+            @include media(">l") {
+                max-width: 40em;
+            }
+        }
+
+        h1{
+            text-shadow: 0 0 2px $c-gray-7;
+            margin-bottom: $space-medium;
+            letter-spacing: .1rem;
+            &:after{
+                content: "";
+                height: 3px;
+                background: rgba($c-primary, 1);
+                width: 200px;
+                display: block;
+                margin-top: $space-small;
+            }
+        }
+
+        .modul__teaser{
+            p{
+                text-shadow: 0 0 3px $c-gray-9;
+                padding-bottom: $space-small;
+                letter-spacing: .025rem;
+                @include media(">m") {
+                    @include fs("large");
+                }
+                a{
+                    background-image: linear-gradient($c-white, $c-white);
+                    background-size: 100% 1px;
+                    background-repeat: no-repeat;
+                    background-position: left bottom;
+                    transition: all 0.2s;
+                    &:hover{
+                        background-image: linear-gradient(90deg, $c-primary, $c-sekundar);
+                    }
+                }
+            }
+        }
+
+        .modul__expand{
+            margin-top: $space-medium;
+        }
+        
+    }
+}
+

@@ -1,0 +1,44 @@
+.modul{
+    position: relative;
+    margin-bottom: $space-xxlarge;
+    padding: 0 $space-medium;
+
+    &__teaser{
+        p{
+            margin-bottom: $space-medium;
+            @include fs("medium", 1.4rem);
+        }
+    }
+
+    header{
+        font-family: $font-primary-semi;
+        letter-spacing: .05rem;
+    }
+
+    a{
+        &:hover img{
+            scale: 1.05;
+        }
+    }
+    
+    .modul__picture{
+        width: 100%;
+        overflow: hidden;
+        picture{
+            width: 100%;
+            position: relative;
+            img{
+                width: 100%;
+                display: block;
+                object-fit: cover;  
+                transition: all .2s ease-in-out;
+            }
+        }     
+    }
+    
+    .modul__news{
+        position: relative;
+    }
+
+}
+

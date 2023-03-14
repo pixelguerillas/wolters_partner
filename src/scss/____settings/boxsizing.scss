@@ -1,0 +1,19 @@
+body {
+    box-sizing: border-box;
+    background: $c-white;
+    color: $c-black;
+    overflow-anchor: none;
+    * {
+        &,
+        &:before,
+        &:after {
+            box-sizing: inherit;
+        }
+    }
+
+    &.body--fullscreen__view {
+        overflow-y: unset !important;
+        overflow-x: unset !important;
+    }
+}
+ 
